@@ -10,7 +10,7 @@ export class WhatsappController {
   constructor(private readonly whatsappService: WhatsappService) {}
 
   @Post('whatsapp')
-  @HttpCode(200) // WhatsApp expects a 200 OK
+  @HttpCode(200)
   @ApiOperation({ summary: 'Handle incoming WhatsApp messages' })
   @ApiResponse({ status: 200, description: 'Webhook received successfully.' })
   handleWebhook(@Body() body: WhatsappWebhookDto): void {

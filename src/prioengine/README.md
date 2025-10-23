@@ -16,7 +16,7 @@ For this Proof of Concept, the scoring logic is intentionally simplistic:
 
 ### Real-World Vision
 
-In a production version of Kinso.ai, this engine would be far more complex. It would score messages based on a variety of signals, such as:
+In a production version of Message-Stream.ai, this engine would be far more complex. It would score messages based on a variety of signals, such as:
 
 -   **User-defined priorities**: Keywords, projects, or themes the user has marked as important.
 -   **Sender importance**: Prioritizing messages from key contacts.

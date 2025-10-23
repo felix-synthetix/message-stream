@@ -10,19 +10,19 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('Kinso.ai API')
-    .setDescription('REST API for Kinso.ai')
+    .setTitle('Message-Stream.ai API')
+    .setDescription('REST API for Message-Stream.ai')
     .setVersion('1.0')
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('open-api', app, swaggerDocument);
 
   const asyncApiOptions = new AsyncApiDocumentBuilder()
-  .setTitle('Kinso.ai Feed API')
-  .setDescription('Real-time message feed for the Kinso.ai application')
+  .setTitle('Message-Stream.ai Feed API')
+  .setDescription('Real-time message feed for the Message-Stream.ai application')
   .setVersion('1.0')
   .setDefaultContentType('application/json')
-  .addServer('kinso-ws', {
+  .addServer('message-stream-ws', {
     url: 'ws://localhost:3001',
     protocol: 'websocket',
   })

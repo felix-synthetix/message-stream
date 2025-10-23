@@ -1,6 +1,6 @@
 # Feed Module
 
-This module serves as the primary interface for clients (e.g., web or mobile applications) to connect to the Kinso.ai system and receive a live, prioritized stream of messages.
+This module serves as the primary interface for clients (e.g., web or mobile applications) to connect to the Message-Stream.ai system and receive a live, prioritized stream of messages.
 
 ## How It Works
 

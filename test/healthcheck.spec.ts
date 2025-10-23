@@ -22,7 +22,7 @@ describe('Healthcheck + Documentation Acceptance Tests', () => {
       await request(app.getHttpServer())
         .get('/health')
         .expect(200)
-        .expect({ status: 'ok', message: 'Hello Kinso!' });
+        .expect({ status: 'ok', message: 'Hello Message-Stream!' });
     });
   });
 

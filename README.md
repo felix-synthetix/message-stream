@@ -2,6 +2,8 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Approach A: API-First Design
+
 ## Project Architecture
 
 This project demonstrates a simple message processing pipeline. The flow of data is as follows:

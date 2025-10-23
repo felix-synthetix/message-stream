@@ -4,6 +4,7 @@ import request from 'supertest';
 import { whatsappWebhookStub } from '../src/whatsapp/stubs/whatsapp-webhook.stub';
 import { PrioritisationModule } from '../src/prioengine/prioritisation.module';
 import { WhatsappModule } from '../src/whatsapp/whatsapp.module';
+import { StreamModule } from '../src/stream/stream.module';
 import { MessageStream } from '../src/stream/stream.buffer';
 
 describe('WhatsApp Webhook Integration', () => {
@@ -14,7 +15,7 @@ describe('WhatsApp Webhook Integration', () => {
       imports: [
         WhatsappModule,
         PrioritisationModule,
-        MessageStream
+        StreamModule
       ],
     })
     .compile();
